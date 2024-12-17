@@ -29,7 +29,7 @@ function updateBalances() {
     }
   }
   
-  // Process transactions (Deposit/Withdraw/Check Balance)
+  //transactions (Deposit/Withdraw/Check Balance)
   function processTransaction() {
     const amount = parseFloat(inputBuffer);
     if (!amount || amount <= 0) {
