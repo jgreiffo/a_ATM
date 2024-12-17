@@ -64,9 +64,9 @@ function updateBalances() {
     activeScreen = ""; // Reset after transaction
   }
   
-  // Card Insertion Simulation
+  // Insert Card
   function insertCard() {
-    scrn2.textContent = "Welcome! Please Enter Your PIN";
+    scrn2.textContent = "WEL-COME! Enter PIN";
     inputBuffer = "";
     activeScreen = "enterPin";
   }
@@ -74,12 +74,12 @@ function updateBalances() {
   // Event Listeners for Buttons
   document.querySelector(".btnLeftContainer .btnSelector:nth-child(1)").onclick = () => {
     activeScreen = "deposit";
-    scrn2.textContent = "Enter Amount to Deposit:";
+    scrn2.textContent = "Amount to Deposit:";
   };
   
   document.querySelector(".btnLeftContainer .btnSelector:nth-child(2)").onclick = () => {
     activeScreen = "withdraw";
-    scrn2.textContent = "Enter Amount to Withdraw:";
+    scrn2.textContent = "Amount to Withdraw:";
   };
   
   document.querySelector(".btnLeftContainer .btnSelector:nth-child(3)").onclick = () => {
@@ -89,7 +89,6 @@ function updateBalances() {
   
   document.querySelector(".cardSlot").onclick = insertCard;
   
-  // Keypad Listeners
   document.querySelectorAll(".keys").forEach((key) => {
     key.onclick = () => handleKeyInput(key.textContent);
   });

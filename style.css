@@ -1,12 +1,12 @@
 body {
     background-color: rgba(28, 111, 138, 0.31);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
 }
 
 .atmContainer {
     border: solid black;
     margin: 2em;
-    background-color: lightslategrey;
+    background-color: rgba(68, 147, 225, 0.522);
 }
 
 .atmTitle {
@@ -36,13 +36,13 @@ body {
 
 .screen {
     border: solid white;
-    color: lemonchiffon;
+    color: rgb(189, 159, 38);
     border-radius: 22px;
     display: flex;
     justify-content: space-around;
     width: 100%;
     padding: 2em;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.617);
 }
 
 .btnSelector {
